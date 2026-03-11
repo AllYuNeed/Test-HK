@@ -190,10 +190,10 @@ export default function AboutPage() {
                 className="text-white text-2xl mb-5"
                 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700 }}
               >
-                EQUIPPING INDIA'S MANUFACTURERS
+                EQUIPPING INDIA&apos;S MANUFACTURERS
               </h3>
               <p className="text-steel-400 text-base leading-relaxed">
-                To provide India's garment and textile industry with industrial machinery that matches global benchmarks — delivering quality, reliability, and technical excellence at every step of the manufacturing process.
+                To provide India&apos;s garment and textile industry with industrial machinery that matches global benchmarks &mdash; delivering quality, reliability, and technical excellence at every step of the manufacturing process.
               </p>
             </div>
 

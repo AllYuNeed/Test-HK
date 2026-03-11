@@ -171,8 +171,8 @@ export default function HeroSection() {
               className="text-steel-300 text-lg leading-relaxed mb-10 max-w-xl animate-fade-in"
               style={{ animationDelay: "0.8s", animationFillMode: "both" }}
             >
-              India's premier supplier of industrial garment and textile machinery. 
-              From steam generators to fusing machines — built for professionals who demand the best.
+              India&apos;s premier supplier of industrial garment and textile machinery. 
+              From steam generators to fusing machines &mdash; built for professionals who demand the best.
             </p>
 
             {/* CTAs */}

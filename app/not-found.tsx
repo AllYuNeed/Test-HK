@@ -24,10 +24,10 @@ export default function NotFound() {
           className="text-white text-3xl mb-4"
           style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700 }}
         >
-          THIS PAGE DOESN'T EXIST
+          THIS PAGE DOESN&apos;T EXIST
         </h1>
         <p className="text-steel-400 mb-8">
-          The page you're looking for has either moved or doesn't exist.
+          The page you&apos;re looking for has either moved or doesn&apos;t exist.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <MagneticButton href="/" variant="primary">Go Home</MagneticButton>

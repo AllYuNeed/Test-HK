@@ -72,7 +72,7 @@ export default function WhyChooseUs() {
             <span className="block text-gradient-blue">ADVANTAGE</span>
           </h2>
           <p className="text-steel-400 text-base leading-relaxed">
-            Trusted by India's leading hotels, garment manufacturers, and export houses.
+            Trusted by India&apos;s leading hotels, garment manufacturers, and export houses.
           </p>
         </div>
 

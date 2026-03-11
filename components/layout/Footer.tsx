@@ -25,7 +25,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-steel-400 text-sm leading-relaxed mb-6">
-              Formerly Sunshine Garments Machinery (Est. 2004). India's trusted partner for industrial garment and textile machinery.
+              Formerly Sunshine Garments Machinery (Est. 2004). India&apos;s trusted partner for industrial garment and textile machinery.
             </p>
             <div className="flex gap-3">
               {["FB", "LI", "TW", "YT"].map((s) => (
