@@ -11,6 +11,13 @@ const typeIcons: Record<string, LucideIcon> = {
   industrial: Building2,
 };
 
+const typeColorClasses: Record<string, string> = {
+  hospitality: "text-[#1e6bff]",
+  garment: "text-[#ff6b1e]",
+  export: "text-[#00d4aa]",
+  industrial: "text-[#8a9ab0]",
+};
+
 const typeColors: Record<string, string> = {
   hospitality: "#1e6bff",
   garment: "#ff6b1e",
@@ -137,7 +144,7 @@ export default function ClientsPage() {
                             border: `1px solid rgba(${color === "#1e6bff" ? "30,107,255" : color === "#ff6b1e" ? "255,107,30" : color === "#00d4aa" ? "0,212,170" : "138,154,176"}, 0.3)`,
                           }}
                         >
-                          <Icon size={18} style={{ color }} />
+                          <Icon size={18} className={typeColorClasses[client.clientType] || "text-[#8a9ab0]"} />
                         </div>
                         <div>
                           <h3
