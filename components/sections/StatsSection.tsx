@@ -11,7 +11,7 @@ export default function StatsSection() {
       <div className="absolute inset-0 stripe-accent opacity-50" />
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-[rgba(255,255,255,0.05)]">
-          {stats.map((stat, i) => (
+          {stats.map((stat) => (
             <div
               key={stat.label}
               className="bg-charcoal-900 px-8 py-8 text-center relative group hover:bg-charcoal-800 transition-colors"

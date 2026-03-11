@@ -78,7 +78,7 @@ export default function WhyChooseUs() {
 
         {/* Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reasons.map((reason, i) => (
+          {reasons.map((reason) => (
             <div
               key={reason.title}
               className="specular-card glass border border-[rgba(255,255,255,0.06)] rounded-sm p-7 group hover:border-[rgba(30,107,255,0.2)] transition-all duration-300"

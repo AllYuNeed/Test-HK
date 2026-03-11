@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { MapPin, Search, Building2, Factory, Package, Hotel } from "lucide-react";
+import { MapPin, Search, Building2, Factory, Package, Hotel, type LucideIcon } from "lucide-react";
 import { clients, getAllCities } from "@/data/clients";
 
-const typeIcons: Record<string, React.ComponentType<any>> = {
+const typeIcons: Record<string, LucideIcon> = {
   hospitality: Hotel,
   garment: Factory,
   export: Package,

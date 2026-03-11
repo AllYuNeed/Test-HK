@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Award, Target, Handshake, TrendingUp } from "lucide-react";
+import { Award, Handshake, TrendingUp } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
@@ -100,7 +100,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-[#1e6bff] via-[rgba(30,107,255,0.3)] to-transparent" />
               <div className="space-y-8 pl-12">
-                {milestones.map((m, i) => (
+                {milestones.map((m) => (
                   <div key={m.year} className="relative group">
                     <div className="absolute -left-[2.2rem] top-1 w-3 h-3 rounded-full bg-charcoal-900 border-2 border-[#1e6bff] group-hover:bg-[#1e6bff] transition-colors" />
                     <div

@@ -45,7 +45,7 @@ export default function ProductsPage() {
       <section className="py-16 bg-charcoal-950">
         <div className="max-w-7xl mx-auto px-6">
           <div className="space-y-16">
-            {categories.map((cat, catI) => (
+            {categories.map((cat) => (
               <div key={cat.categorySlug}>
                 {/* Category header */}
                 <div className="flex items-center justify-between mb-8 pb-4 border-b border-[rgba(255,255,255,0.07)]">

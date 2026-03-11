@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import { ArrowRight, ChevronDown, Zap, Shield, Award } from "lucide-react";
 import MagneticButton from "@/components/ui/MagneticButton";
 import { BRAND_YEAR } from "@/data/products";
