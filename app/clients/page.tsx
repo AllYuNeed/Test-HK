@@ -4,7 +4,8 @@ import Link from "next/link";
 import { MapPin, Search, Building2, Factory, Package, Hotel } from "lucide-react";
 import { clients, getAllCities } from "@/data/clients";
 
-const typeIcons: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const typeIcons: Record<string, React.ComponentType<any>> = {
   hospitality: Hotel,
   garment: Factory,
   export: Package,
