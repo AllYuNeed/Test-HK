@@ -1,10 +1,9 @@
 import { Target, Eye, Cog, Factory, Users, TrendingUp, Award, Lightbulb, Handshake } from "lucide-react";
 import { motion } from "motion/react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import { useFadeUp } from "../../hooks/useGsap";
 
 export function About() {
-  const heroRef = useFadeUp(0);
+  // Removed useFadeUp to avoid conflict with Motion animations
   
   const coreValues = [
     {
@@ -60,10 +59,9 @@ export function About() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            ref={heroRef as any}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-center mb-16"
           >
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">

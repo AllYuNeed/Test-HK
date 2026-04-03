@@ -8,7 +8,7 @@ import { useFadeUp, useStagger } from "../../hooks/useGsap";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export function Home() {
-  const heroRef = useFadeUp(0);
+  // Removed heroRef useFadeUp to avoid conflict with Motion animations
   const statsRef = useStagger(".stat-item", 0.1);
   const cardsRef = useStagger(".product-card", 0.15);
 
@@ -60,10 +60,9 @@ export function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <motion.div
-              ref={heroRef as any}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               className="space-y-6 md:space-y-8"
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium">

@@ -2,11 +2,11 @@ import { Link, useParams, Navigate } from "react-router-dom";
 import { motion } from "motion/react";
 import { ArrowRight, ChevronRight, Home } from "lucide-react";
 import { getCategoryBySlug, getSubcategoryBySlug } from "../../data/products";
-import { useFadeUp, useStagger } from "../../hooks/useGsap";
+import { useStagger } from "../../hooks/useGsap";
 
 export function SubcategoryPage() {
   const { category, subcategory } = useParams<{ category: string; subcategory: string }>();
-  const heroRef = useFadeUp(0);
+  // Removed useFadeUp to avoid conflict with Motion animations
   const cardsRef = useStagger(".product-item", 0.1);
 
   if (!category || !subcategory) return <Navigate to="/products" />;
@@ -46,10 +46,9 @@ export function SubcategoryPage() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            ref={heroRef as any}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-4xl mx-auto text-center"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm mb-6">
